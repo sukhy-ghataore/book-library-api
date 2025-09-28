@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.list-authors {
+  form {
+    input {
+      padding: 10px 0;
+      margin: 0 0 20px;
+      border: 0;
+      border-bottom: 1px double #000;
+    }
+  }
+  .author {
+    input {
+      padding: 5px 0;
+      border: 0;
+      border-bottom: 1px dashed #000;
+    }
+    button {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+
+#book-form {
+  .form-field {
+    margin: 10px 0;
+    span {
+      &.label {
+        display: block;
+        margin: 0 0 5px;
+        font-weight: 500;
+      }
+    }
+    input, select {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px 15px;
+      border: 1px solid #333;
+    }
+  }
+}
+
+.list-books {
+  padding: 20px 30px;
+  background-color: #EEE;
+  .book {
+    border-top: 1px solid #BBB;
+    &:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+    .btns {
+      button {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}
